@@ -1,0 +1,13 @@
+@mixin absolute {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: var(--height-absolute);
+  bottom: -20px;
+}
+
+@mixin border {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: var(--border);
+}

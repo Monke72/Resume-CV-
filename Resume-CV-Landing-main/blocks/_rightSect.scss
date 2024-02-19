@@ -1,0 +1,119 @@
+.right__section {
+  border-left: 3px solid #ffffff;
+
+  @include mobile {
+    border-left: 0px;
+    border-bottom: 3px solid #ffffff;
+  }
+  &-svg {
+    @include mobile {
+      width: 45px !important;
+      height: 45px !important ;
+    }
+  }
+
+  @include mobile {
+    flex-direction: row-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+
+    --padding: 15px;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 45px;
+    justify-content: center;
+    align-items: center;
+
+    @include desktop-xl {
+      row-gap: 30px;
+    }
+    @include mobile {
+      flex-direction: row;
+      gap: 20px;
+      row-gap: 0px;
+    }
+
+    svg {
+      transform: scale(1.1);
+      border-radius: 50%;
+      background-color: #f0f0f6;
+
+      @include hover {
+        background-color: var(--color-yellow);
+        transition-duration: 0.2s;
+      }
+    }
+  }
+  background-color: var(--color-light);
+  padding-top: var(--padding);
+
+  button {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background-color: inherit;
+    margin-bottom: 20vh;
+
+    @include desktop {
+      margin-bottom: 14vh;
+    }
+
+    @include mobile {
+      margin-bottom: 0px;
+    }
+
+    path {
+      fill: var(--color-fill);
+    }
+  }
+
+  svg {
+    width: 60px;
+    height: 60px;
+    margin-inline: 35px;
+
+    @include desktop-above-xl {
+      width: 75px;
+      height: 75px;
+      margin-inline: 40px;
+    }
+
+    @include desktop-xl {
+      width: 52px;
+      height: 52px;
+      margin-inline: 25px;
+    }
+
+    @include desktop {
+      width: 40px;
+      height: 40px;
+      margin-inline: 25px;
+    }
+
+    @include tablet {
+      margin-inline: 18px;
+    }
+
+    @include mobile {
+      margin-inline: 0px;
+    }
+    @include hover {
+      transform: scale(1.1);
+      transition-delay: 0.01s;
+    }
+
+    circle {
+      fill: rgb(240, 240, 246);
+    }
+  }
+}
+
+.right__section button path {
+  fill: var(--color-fill);
+}

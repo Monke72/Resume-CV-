@@ -1,0 +1,275 @@
+.section__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  background-color: var(--color-light);
+}
+.center__section {
+  justify-content: space-between;
+  display: flex;
+  gap: 30px;
+  padding-inline: var(--padding);
+  width: 100%;
+  border-bottom: 3px solid #ffffff;
+
+  @include desktop {
+    justify-content: center;
+    padding-inline: 20px;
+    gap: 0;
+    width: 100%;
+  }
+
+  @include mobile {
+    padding-inline: 30px;
+    margin-inline: 20px;
+    width: 97%;
+  }
+
+  padding-bottom: 20px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    @include desktop-above-xl {
+      row-gap: 20px;
+    }
+  }
+
+  li {
+    position: relative;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+    @include desktop-xl {
+      font-size: 19px;
+    }
+    @include desktop {
+      justify-content: center;
+      text-align: center;
+    }
+
+    @media (max-width: 910px) {
+      justify-content: start;
+      text-align: start;
+    }
+  }
+
+  path {
+    fill: var(--color-yellow);
+  }
+
+  svg {
+    width: 35px;
+    height: 35px;
+    align-self: center;
+    display: flex;
+    margin-bottom: 3px;
+    padding-right: 5px;
+  }
+
+  img {
+    padding-top: 70px;
+    height: var(--heightImage);
+
+    @include desktop-above-xl {
+      --heightImage: 700px;
+      width: 775px;
+    }
+
+    @include desktop-xl {
+      --heightImage: 525px;
+      width: auto;
+    }
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  h1 {
+    font-size: 50px;
+    text-wrap: nowrap;
+    padding-top: 93px;
+
+    @include desktop {
+      padding-top: 60px;
+    }
+
+    @include desktop-xl {
+      font-size: 35px;
+    }
+    @include desktop {
+      text-align: center;
+    }
+  }
+  span {
+    color: var(--color-yellow);
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  button {
+    position: relative;
+    padding: 14px 60px 14px 45px;
+    border: 0;
+    background-color: var(--color-yellow);
+    border-radius: 10px;
+
+    @include hover {
+      transform: scale(1.1);
+      opacity: 0.8;
+      transition-duration: 0.2s;
+    }
+
+    @include desktop-above-xl {
+      padding: 23px 70px 23px 30px;
+    }
+
+    @include desktop-xl {
+      font-size: 20px;
+      padding: 14px 53px 14px 30px;
+    }
+
+    @include desktop {
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--color-dark);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: url(/image/Frame.svg) left 3px center/contain no-repeat;
+      margin-top: 3px;
+
+      @include desktop-above-xl {
+        margin-top: 5px;
+      }
+
+      @include desktop-xl {
+        margin-top: 0px;
+      }
+    }
+  }
+
+  &-bottom {
+    padding-top: 200px;
+
+    @include desktop {
+      padding-top: 18vw;
+    }
+    @include tablet {
+      padding-top: 8vw;
+    }
+    ul {
+      padding-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 30px;
+
+      @include desktop {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+        margin-inline: 10px;
+      }
+
+      @include mobile {
+        margin-inline: 14px;
+      }
+
+      h3 {
+        font-size: 31px;
+        text-align: center;
+
+        @include desktop-xl {
+          font-size: 21px;
+        }
+      }
+    }
+
+    &-title {
+      text-align: center;
+
+      h2 {
+        color: var(--color-yellow);
+        font-size: 45px;
+
+        @include desktop-xl {
+          font-size: 38px;
+        }
+      }
+
+      h3 {
+        font-size: 31px;
+        text-shadow: 13px 7px 14px #767676;
+        padding-top: 30px;
+        max-width: 800px;
+        margin-inline: auto;
+        font-weight: normal;
+
+        @include desktop-xl {
+          font-size: 27px;
+        }
+
+        @include desktop {
+          font-size: 22px;
+        }
+      }
+    }
+
+    li {
+      padding: 40px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style-type: none;
+      text-transform: uppercase;
+      background-color: var(--color-light);
+      border: 3px solid #ffffff;
+
+      @include desktop-xl {
+        padding: 30px;
+      }
+
+      @include hover {
+        transform: scale(1.1);
+        transition-delay: 0.01s;
+
+        @include mobile {
+          transform: scale(1.03);
+        }
+      }
+    }
+
+    p {
+      text-transform: capitalize;
+      font-size: 22px;
+      text-align: center;
+      padding-top: 20px;
+
+      @include desktop-xl {
+        font-size: 18px;
+      }
+    }
+
+    svg {
+      width: 100px;
+      height: 100px;
+      color: var(--color-yellow);
+    }
+  }
+}

@@ -1,0 +1,265 @@
+.left__section {
+  max-width: 400px;
+  padding-top: var(--padding);
+  background-color: var(--color-light);
+  padding-inline: 55px;
+  border-right: 3px solid #ffffff;
+
+  @include mobile {
+    border-right: 0;
+  }
+
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    max-width: none;
+    width: 100%;
+    padding-inline: 10px;
+  }
+
+  h3 {
+    @include desktop-xl {
+      font-size: 23px;
+    }
+    @include mobile {
+      font-size: 35px;
+    }
+  }
+
+  p,
+  div {
+    @include desktop-xl {
+      font-size: 20px;
+    }
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+
+  @include desktop-above-xl {
+    max-width: 500px;
+    padding-inline: 65px;
+  }
+
+  @include desktop-xl {
+    padding-inline: 30px;
+  }
+
+  @include desktop {
+    padding-inline: 23px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  svg {
+    margin-top: 7px;
+    width: 45px;
+    height: 40px;
+    border-radius: 15%;
+    color: black;
+    background-color: var(--color-yellow);
+
+    @include hover {
+      transform: scale(1.1);
+      transition-delay: 0.2ms;
+    }
+  }
+
+  &-button {
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    border: 0;
+    width: 100%;
+    padding-block: 20px;
+    background-color: var(--color-yellow);
+    font-weight: 700;
+    font-size: 22px;
+    border-radius: 10px;
+
+    @include hover {
+      transform: scale(1.1);
+    }
+
+    @include desktop-xl {
+      font-size: 19px;
+      gap: 1px;
+    }
+
+    svg {
+      @include desktop-xl {
+        transform: scale(0.8);
+      }
+    }
+  }
+  &-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &-item {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      @include border;
+    }
+
+    &-title {
+      font-size: 30px;
+      padding-top: 40px;
+      padding-bottom: 10px;
+
+      @include desktop-above-xl {
+        font-size: 33px;
+      }
+
+      @include desktop-xl {
+        font-size: 26px;
+      }
+    }
+
+    &-work {
+      padding-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      @include border;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &-people {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    &-item {
+      padding: 5px 10px;
+      background-color: var(--color-yellow);
+    }
+  }
+
+  &-languages {
+    position: relative;
+
+    h3 {
+      font-size: 29px;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding-bottom: 45px !important;
+      @include border;
+    }
+
+    &-item {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      &:first-child {
+        padding-top: 15px;
+      }
+    }
+  }
+
+  &-extra {
+    h3 {
+      padding-bottom: 10px;
+    }
+    display: flex;
+    flex-direction: column;
+
+    &-list {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      row-gap: 7px;
+      @include border;
+    }
+
+    &-item {
+      position: relative;
+      padding-left: 30px;
+      &::after {
+        @include absolute;
+        width: 20px;
+        top: 5px;
+        left: 0;
+        background: url(/image/extraicon.png) center/contain no-repeat;
+      }
+    }
+  }
+}
+.left_container {
+  max-width: 300px;
+
+  @include mobile {
+    max-width: none;
+  }
+}
+.im {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  @include desktop-above-xl {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+.Russian,
+.English,
+.razm,
+.styl,
+.javas {
+  position: relative;
+
+  &::after {
+    @include absolute;
+  }
+}
+.Russian::after {
+  background: url(/image/lineone.png) no-repeat center/contain;
+}
+.English::after {
+  background: url(/image/linetoo.png) no-repeat center/contain;
+}
+.styl::after {
+  background: url(/image/linecss.png) no-repeat center/contain;
+}
+.javas::after {
+  background: url(/image/linejs.png) no-repeat center/contain;
+}
+.razm::after {
+  background: url(/image/linehtmk.png) no-repeat center/contain;
+}
+.left__section-button-any {
+  padding-bottom: 30px;
+}
+
+[data-tooltip] {
+  position: relative; /* Относительное позиционирование */
+}
