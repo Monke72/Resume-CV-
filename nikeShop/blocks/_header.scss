@@ -1,0 +1,98 @@
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-list {
+    display: flex;
+  }
+  &-item {
+    padding-inline: 15.4px;
+  }
+  &-button {
+    padding: 7px 20px;
+    border: 0;
+    background-color: var(--color-light);
+    margin-block: 7px;
+    margin-left: 315px;
+  }
+}
+.any_ {
+  border-right: 1px solid var(--color-dark);
+}
+.wrapper__header-top {
+  background-color: var(--color-fon);
+}
+.wrapper__main-header {
+  background-color: var(--color-light);
+}
+.header__main {
+  &-nav {
+    padding-left: 227px;
+    margin-right: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: var(--color-dark);
+  }
+  padding-block: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &-list {
+    display: flex;
+    font-size: 18px;
+    gap: 20px;
+  }
+  &-icon {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &-input {
+    position: relative;
+    background-color: var(--color-fon);
+    border: 0;
+    max-width: 180px;
+    border-radius: 100px;
+    padding: 11px 48px 11px 30px;
+
+    &::placeholder {
+      padding-left: 5px;
+    }
+    &__info {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 18px;
+        height: 18px;
+        background: url(/image/dinahui.svg) no-repeat;
+        z-index: 10;
+        top: 13px;
+        left: 12px;
+      }
+    }
+  }
+}
+.header__btm-wrapper {
+  background-color: var(--color-fon);
+}
+
+.header__btm {
+  &-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 10px;
+    h2 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 11px;
+    }
+    span {
+      text-decoration: underline;
+      font-weight: 600;
+    }
+  }
+}

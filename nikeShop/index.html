@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <body>
+    <header class="header">
+      <div class="wrapper__header-top">
+        <div class="header__top container">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.05 4.14V4.08C13.05 3.8 13.14 3.55 13.32 3.33C13.5 3.11 13.73 3 14.01 3C14.29 3 14.54 3.09 14.76 3.27C14.98 3.45 15.1 3.69 15.12 3.99C15.14 4.29 15.05 4.54 14.85 4.74C14.65 4.94 14.41 5.04 14.13 5.04L13.95 5.1L14.01 5.19L13.95 5.52L13.83 6.48C13.87 6.52 13.89 6.56 13.89 6.6L13.77 7.2C13.73 7.28 13.69 7.34 13.65 7.38L13.59 7.62C13.51 7.94 13.44 8.2 13.38 8.4C13.32 8.6 13.27 8.76 13.23 8.88V9C13.19 9.2 13.16 9.36 13.14 9.48C13.12 9.6 13.05 9.8 12.93 10.08C12.85 10.24 12.85 10.5 12.93 10.86L12.99 10.92C12.99 11.04 13.04 11.18 13.14 11.34C13.24 11.5 13.29 11.64 13.29 11.76C13.33 12.56 13.27 13.24 13.11 13.8L13.23 14.16C13.71 14.4 13.85 14.66 13.65 14.94L13.95 15.06C14.43 15.3 14.77 15.51 14.97 15.69C15.17 15.87 15.37 16.06 15.57 16.26C15.73 16.3 15.85 16.36 15.93 16.44L16.11 16.5C16.95 17.06 17.79 17.74 18.63 18.54L18.87 18.72V18.78L18.81 18.9L18.99 19.02H19.05C19.17 19.1 19.25 19.14 19.29 19.14H19.35C19.39 19.14 19.43 19.12 19.47 19.08L19.59 19.02C19.67 18.94 19.75 18.88 19.83 18.84H20.07C20.11 18.84 20.11 18.86 20.07 18.9L19.83 19.02L19.53 19.38H19.95L20.37 19.44C20.49 19.4 20.59 19.36 20.67 19.32L20.97 19.14C21.09 19.1 21.21 19.14 21.33 19.26H21.39C21.43 19.3 21.41 19.36 21.33 19.44L20.61 20.1C20.41 20.26 20.23 20.36 20.07 20.4L19.29 20.94C19.25 20.98 19.21 20.98 19.17 20.94L18.99 20.7L18.87 20.46L18.72 20.25L18.54 20.01L18.39 19.83L18.27 19.68L18.03 19.5C17.95 19.5 17.87 19.48 17.79 19.44L17.01 18.84C16.89 18.84 16.75 18.78 16.59 18.66C15.99 18.14 15.59 17.82 15.39 17.7L15.03 17.46L14.31 17.34C14.07 17.3 13.75 17.18 13.35 16.98L12.87 16.74C12.55 16.58 12.33 16.5 12.21 16.5L11.97 16.38C11.81 16.34 11.69 16.3 11.61 16.26L11.49 16.14C11.41 16.14 11.33 16.16 11.25 16.2L10.05 16.8L8.54996 17.46C8.14996 17.78 7.76996 18.04 7.40996 18.24L6.74996 18.54L5.72996 19.26C5.64996 19.34 5.56996 19.34 5.48996 19.26L5.36996 19.38C5.24996 19.42 5.16996 19.44 5.12996 19.44L4.88996 19.56V19.68H4.76996L4.64996 19.86C4.56996 20.02 4.48996 20.11 4.40996 20.13C4.32996 20.15 4.27996 20.18 4.25996 20.22C4.23996 20.26 4.21996 20.29 4.19996 20.31L4.07996 20.43L3.89996 20.55L3.62996 20.52L3.26996 20.58L3.02996 20.64C2.82996 20.68 2.66996 20.65 2.54996 20.55C2.42996 20.45 2.32996 20.3 2.24996 20.1C2.16996 19.98 2.20996 19.88 2.36996 19.8L2.42996 19.74C2.46996 19.7 2.52996 19.68 2.60996 19.68H2.96996L3.44996 19.5L3.68996 19.44C3.68996 19.36 3.70996 19.3 3.74996 19.26C3.78996 19.22 3.84996 19.2 3.92996 19.2V19.14C3.88996 19.06 3.86996 18.98 3.86996 18.9C3.82996 18.82 3.81996 18.76 3.83996 18.72C3.85996 18.68 3.87996 18.66 3.89996 18.66H3.92996L3.98996 18.84C4.02996 19.04 4.08996 19.1 4.16996 19.02L4.22996 18.9C4.26996 18.82 4.32996 18.78 4.40996 18.78L4.52996 18.9L4.64996 18.78L4.58996 18.72C4.58996 18.68 4.60996 18.66 4.64996 18.66L4.88996 18.42C5.08996 18.18 5.32996 17.96 5.60996 17.76C6.16996 17.32 6.76996 16.98 7.40996 16.74C7.60996 16.54 7.82996 16.44 8.06996 16.44C8.22996 16.16 8.46996 15.86 8.78996 15.54C9.06996 15.34 9.26996 15.2 9.38996 15.12C9.46996 14.96 9.56996 14.88 9.68996 14.88H9.74996L9.86996 14.76C9.94996 14.72 10.01 14.68 10.05 14.64V14.34C10.05 14.14 10.07 13.98 10.11 13.86C10.15 13.74 10.25 13.68 10.41 13.68L10.65 13.44C10.57 13.28 10.53 13.1 10.53 12.9H10.47C10.39 12.78 10.35 12.66 10.35 12.54C10.23 12.34 10.15 12.18 10.11 12.06H9.92996C9.88996 12.18 9.78996 12.26 9.62996 12.3L9.56996 12.42C9.40996 12.7 9.26996 12.91 9.14996 13.05C9.02996 13.19 8.80996 13.36 8.48996 13.56C8.28996 13.76 8.14996 13.98 8.06996 14.22C8.02996 14.34 8.02996 14.46 8.06996 14.58L8.00996 14.7H8.06996C8.06996 14.78 8.08996 14.82 8.12996 14.82H8.18996C8.26996 14.86 8.30996 14.91 8.30996 14.97C8.30996 15.03 8.24996 15.05 8.12996 15.03C8.00996 15.01 7.91996 14.97 7.85996 14.91C7.79996 14.85 7.74996 14.82 7.70996 14.82L7.52996 15C7.44996 15.12 7.36996 15.17 7.28996 15.15C7.20996 15.13 7.18996 15.1 7.22996 15.06L7.28996 15C7.32996 14.92 7.32996 14.88 7.28996 14.88L6.80996 15C6.76996 15.04 6.71996 15.04 6.65996 15C6.59996 14.96 6.60996 14.92 6.68996 14.88L6.98996 14.76C6.98996 14.72 6.96996 14.7 6.92996 14.7C6.76996 14.78 6.60996 14.8 6.44996 14.76L6.14996 14.7L6.08996 14.64C6.08996 14.6 6.10996 14.58 6.14996 14.58C6.30996 14.62 6.50996 14.6 6.74996 14.52L7.16996 14.34L7.64996 13.8L7.70996 13.68C7.86996 13.36 8.03996 13.07 8.21996 12.81C8.39996 12.55 8.58996 12.34 8.78996 12.18L8.84996 11.94C8.92996 11.78 9.00996 11.64 9.08996 11.52C9.16996 11.4 9.26996 11.24 9.38996 11.04L9.56996 10.8C9.72996 10.56 9.90996 10.44 10.11 10.44L10.29 10.26C10.33 10.22 10.35 10.16 10.35 10.08L10.47 9.96L10.41 9.9C10.17 9.7 10.05 9.52 10.05 9.36C10.01 9.08 10.1 8.84 10.32 8.64C10.54 8.44 10.76 8.35 10.98 8.37C11.2 8.39 11.37 8.46 11.49 8.58L11.61 8.7C11.65 8.7 11.67 8.72 11.67 8.76L11.91 8.88V9.06C11.99 9.14 12.03 9.2 12.03 9.24C12.11 9.12 12.23 8.98 12.39 8.82L12.69 7.86C12.69 7.7 12.73 7.54 12.81 7.38L12.93 7.2V7.08L13.11 6.36H13.23L13.41 5.64C13.45 5.52 13.45 5.38 13.41 5.22L13.17 4.62L13.05 4.14Z"
+              fill="#111111"
+            />
+          </svg>
+          <button class="header__top-button">Skip to main content</button>
+          <div>
+            <ul class="header__top-list">
+              <li class="header__top-item any_">Find a Store</li>
+              <li class="header__top-item any_">Help</li>
+              <li class="header__top-item any_">Join Us</li>
+              <li class="header__top-item">Sign In</li>
+            </ul>
+          </div>
+        </div>
+        <div class="wrapper__main-header">
+          <div class="header__main container">
+            <div>
+              <svg
+                width="59"
+                height="22"
+                viewBox="0 0 59 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M58.9262 0.772461L15.8854 19.0298C12.302 20.5502 9.28743 21.3087 6.85813 21.3087C4.12475 21.3087 2.13358 20.3442 0.910756 18.4184C-0.674992 15.9335 0.0181595 11.9381 2.73845 7.72033C4.35363 5.25506 6.40692 2.99251 8.40791 0.828045C7.93709 1.59313 3.78145 8.5083 8.32617 11.7648C9.22531 12.4187 10.5037 12.7391 12.0764 12.7391C13.3384 12.7391 14.7869 12.5332 16.3792 12.1179L58.9262 0.772461Z"
+                  fill="#111111"
+                />
+              </svg>
+            </div>
+            <nav class="header__main-nav">
+              <ul class="header__main-list">
+                <li>
+                  <a href=""><p>New & Featured</p></a>
+                </li>
+                <li>
+                  <a href=""><p>Men</p></a>
+                </li>
+                <li>
+                  <a href=""><p>Women</p></a>
+                </li>
+                <li>
+                  <a href=""><p>Kids</p></a>
+                </li>
+                <li>
+                  <a href=""><p>Sale</p></a>
+                </li>
+                <li>
+                  <a href=""><p>SNKRS</p></a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__main-icon">
+              <div class="header__main-input__info">
+                <input
+                  class="header__main-input"
+                  type="text"
+                  placeholder="Search"
+                />
+              </div>
+              <div class="header__main-icon">
+                <svg
+                  width="36"
+                  height="36"
+                  viewBox="0 0 36 36"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1_24)">
+                    <path
+                      d="M22.794 9.75002C24.118 9.75002 25.362 10.266 26.298 11.201C27.2262 12.1309 27.7475 13.3911 27.7475 14.705C27.7475 16.0189 27.2262 17.2791 26.298 18.209L18 26.508L9.70096 18.209C8.77307 17.2791 8.25195 16.0192 8.25195 14.7055C8.25195 13.3919 8.77307 12.1319 9.70096 11.202C10.16 10.7403 10.706 10.3743 11.3075 10.125C11.909 9.87578 12.5539 9.74832 13.205 9.75002C14.529 9.75002 15.773 10.266 16.709 11.201L17.469 11.961L18 12.492L18.53 11.961L19.29 11.201C19.7492 10.7396 20.2953 10.3738 20.8967 10.1248C21.4982 9.87573 22.143 9.74835 22.794 9.75002Z"
+                      stroke="#111111"
+                      stroke-width="1.5"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.25 8.25V6C8.25 5.40326 8.48705 4.83097 8.90901 4.40901C9.33097 3.98705 9.90326 3.75 10.5 3.75H13.5C14.0967 3.75 14.669 3.98705 15.091 4.40901C15.5129 4.83097 15.75 5.40326 15.75 6C15.75 6.59674 15.5129 7.16903 15.091 7.59099C14.669 8.01295 14.0967 8.25 13.5 8.25H3.75V16.5C3.75 17.4946 4.14509 18.4484 4.84835 19.1517C5.55161 19.8549 6.50544 20.25 7.5 20.25H16.5C17.4946 20.25 18.4484 19.8549 19.1517 19.1517C19.8549 18.4484 20.25 17.4946 20.25 16.5V8.25H17.5"
+                    stroke="#111111"
+                    stroke-width="1.5"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__btm-wrapper">
+          <div class="header__btm-info container">
+            <h2>Hello Nike App</h2>
+            <p>
+              Download the app to access everything Nike.
+              <span>Get Your Great</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="main__section container">
+      <div class="main__section-image">
+        <img src="/image/crocs.jpg" alt="" />
+      </div>
+      <div class="main__section-info">
+        <p class="main__section-info__topText">First Look</p>
+        <h2 class="main__section-info__name">Nike Air Max Pulse</h2>
+        <p class="main__section-info__mainText">
+          Extreme comfort. Hyper durable. Max volume. Introducing the Air Max
+          Pulse <br />
+          —designed to push you past your limits and help you go to the max.
+        </p>
+        <div class="main__section__buttons">
+          <button class="main__section-button">Notify Me</button>
+          <button class="main__section-button">Shop Air Max</button>
+        </div>
+      </div>
+    </section>
+    <section class="best__sect">
+      <div class="best__sect-swiper container">
+        <h2>Best of Air Max</h2>
+        <div class="best__sect-slides">
+          <p>Shop</p>
+          <div class="best__sect-slide">
+            <button disabled class="anybtn">
+              <svg
+                class="any__"
+                width="8.557617"
+                height="14.993164"
+                viewBox="0 0 8.55762 14.9932"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  id="Vector"
+                  d="M8.02734 14.4629L1.06055 7.49707L8.02734 0.530273"
+                  stroke="#CCCCCC"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.500000"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="best__sect-slide">
+            <button class="somebtn">
+              <svg
+                class="any__"
+                width="8.556641"
+                height="14.993164"
+                viewBox="0 0 8.55664 14.9932"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  id="Vector"
+                  d="M0.530273 14.4629L7.49609 7.49707L0.530273 0.530273"
+                  stroke="#111111"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.500000"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/image/nikeone.jpg" alt="" />
+            <div class="swiper__text">
+              <div class="swiper__text-main">
+                <h3>Nike Air Max Pulse</h3>
+                <p>₹ 13 995</p>
+              </div>
+              <p class="swiper__text-btm">Women's Shoes</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/image/nikeone.jpg" alt="" />
+            <div class="swiper__text">
+              <div class="swiper__text-main">
+                <h3>Nike Air Max Pulse</h3>
+                <p>₹ 13 995</p>
+              </div>
+              <p class="swiper__text-btm">Women's Shoes</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/image/nikeToo.jpg" alt="" />
+            <div class="swiper__text">
+              <div class="swiper__text-main">
+                <h3>Nike Air Max Pulse</h3>
+                <p>₹ 13 995</p>
+              </div>
+              <p class="swiper__text-btm">Women's Shoes</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/image/nikeone.jpg" alt="" />
+            <div class="swiper__text">
+              <div class="swiper__text-main">
+                <h3>Nike Air Max Pulse</h3>
+                <p>₹ 13 995</p>
+              </div>
+              <p class="swiper__text-btm">Women's Shoes</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/image/nikeToo.jpg" alt="" />
+            <div class="swiper__text">
+              <div class="swiper__text-main">
+                <h3>Nike Air Max Pulse</h3>
+                <p>₹ 13 995</p>
+              </div>
+              <p class="swiper__text-btm">Women's Shoes</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="/image/nikeone.jpg" alt="" />
+            <div class="swiper__text">
+              <div class="swiper__text-main">
+                <h3>Nike Air Max Pulse</h3>
+                <p>₹ 13 995</p>
+              </div>
+              <p class="swiper__text-btm">Women's Shoes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="img__sect container">
+      <div class="img__sect-name">
+        <h2>Featured</h2>
+      </div>
+      <div class="img__sect-image">
+        <img src="/image/Image (3).jpg" alt="" />
+      </div>
+      <div class="img__sect-info">
+        <h3 class="img__sect-info__step">STEP INTO WHAT FEELS GOOD</h3>
+        <p class="img__sect-info__text">
+          Cause everyone should know the feeling of running in that perfect
+          pair.
+        </p>
+        <button class="img__sect-info__button">Find Your Shoe</button>
+      </div>
+    </section>
+    <!-- <section class="gearup__sect container">
+      <h2>Gear Up</h2>
+      <div class="gearup__sect-swipers">
+        <div class="gearup__sect-mens">
+          <div class="gearup__sect-buttons">
+            <h2>Shop Men's</h2>
+            <div class="best__sect-slide">
+              <button class="mens__buttons">
+                <svg
+                  class="any__"
+                  width="8.557617"
+                  height="14.993164"
+                  viewBox="0 0 8.55762 14.9932"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    id="Vector"
+                    d="M8.02734 14.4629L1.06055 7.49707L8.02734 0.530273"
+                    stroke="#CCCCCC"
+                    stroke-opacity="1.000000"
+                    stroke-width="1.500000"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="best__sect-slide">
+              <button class="mens__buttons-too">
+                <svg
+                  class="any__"
+                  width="8.556641"
+                  height="14.993164"
+                  viewBox="0 0 8.55664 14.9932"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    id="Vector"
+                    d="M0.530273 14.4629L7.49609 7.49707L0.530273 0.530273"
+                    stroke="#111111"
+                    stroke-opacity="1.000000"
+                    stroke-width="1.500000"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiperAny mySwiperToo">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/image/nikeToo.jpg" alt="" />
+                <div class="swiper__text">
+                  <div class="swiper__text-main">
+                    <h3>Nike Air Max Pulse</h3>
+                    <p>₹ 13 995</p>
+                  </div>
+                  <p class="swiper__text-btm">Women's Shoes</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="/image/nikeone.jpg" alt="" />
+                <div class="swiper__text">
+                  <div class="swiper__text-main">
+                    <h3>Nike Air Max Pulse</h3>
+                    <p>₹ 13 995</p>
+                  </div>
+                  <p class="swiper__text-btm">Women's Shoes</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="/image/nikeToo.jpg" alt="" />
+                <div class="swiper__text">
+                  <div class="swiper__text-main">
+                    <h3>Nike Air Max Pulse</h3>
+                    <p>₹ 13 995</p>
+                  </div>
+                  <p class="swiper__text-btm">Women's Shoes</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="/image/nikeone.jpg" alt="" />
+                <div class="swiper__text">
+                  <div class="swiper__text-main">
+                    <h3>Nike Air Max Pulse</h3>
+                    <p>₹ 13 995</p>
+                  </div>
+                  <p class="swiper__text-btm">Women's Shoes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gearup__sect-womens">
+          <div class="gearup__sect-buttons">
+            <h2>Shop Womens</h2>
+            <div class="best__sect-slide">
+              <button class="womens__buttons">
+                <svg
+                  class="any__"
+                  width="8.557617"
+                  height="14.993164"
+                  viewBox="0 0 8.55762 14.9932"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    id="Vector"
+                    d="M8.02734 14.4629L1.06055 7.49707L8.02734 0.530273"
+                    stroke="#CCCCCC"
+                    stroke-opacity="1.000000"
+                    stroke-width="1.500000"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="best__sect-slide">
+              <button class="womens__buttons-too">
+                <svg
+                  class="any__"
+                  width="8.556641"
+                  height="14.993164"
+                  viewBox="0 0 8.55664 14.9932"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    id="Vector"
+                    d="M0.530273 14.4629L7.49609 7.49707L0.530273 0.530273"
+                    stroke="#111111"
+                    stroke-opacity="1.000000"
+                    stroke-width="1.500000"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiperAny mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/image/nikeToo.jpg" alt="" />
+                <div class="swiper__text">
+                  <div class="swiper__text-main">
+                    <h3>Nike Air Max Pulse</h3>
+                    <p>₹ 13 995</p>
+                  </div>
+                  <p class="swiper__text-btm">Women's Shoes</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="/image/nikeone.jpg" alt="" />
+                <div class="swiper__text">
+                  <div class="swiper__text-main">
+                    <h3>Nike Air Max Pulse</h3>
+                    <p>₹ 13 995</p>
+                  </div>
+                  <p class="swiper__text-btm">Women's Shoes</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="/image/nikeToo.jpg" alt="" />
+                <div class="swiper__text">
+                  <div class="swiper__text-main">
+                    <h3>Nike Air Max Pulse</h3>
+                    <p>₹ 13 995</p>
+                  </div>
+                  <p class="swiper__text-btm">Women's Shoes</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="/image/nikeone.jpg" alt="" />
+                <div class="swiper__text">
+                  <div class="swiper__text-main">
+                    <h3>Nike Air Max Pulse</h3>
+                    <p>₹ 13 995</p>
+                  </div>
+                  <p class="swiper__text-btm">Women's Shoes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

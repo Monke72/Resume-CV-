@@ -1,0 +1,27 @@
+.best__sect {
+  &-swiper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 18px;
+  }
+  &-slides {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  &-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+      border: 0;
+      width: 20px;
+      border-radius: 50%;
+      height: 48px;
+      width: 48px;
+      background-color: var(--color-fon);
+    }
+  }
+}
