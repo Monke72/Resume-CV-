@@ -267,7 +267,12 @@
         <h2>Featured</h2>
       </div>
       <div class="img__sect-image">
-        <img src="/image/Image (3).jpg" alt="" />
+        <img
+          src="/image/Image (3).jpg"
+          data-gender="men"
+          data-kids="true"
+          alt=""
+        />
       </div>
       <div class="img__sect-info">
         <h3 class="img__sect-info__step">STEP INTO WHAT FEELS GOOD</h3>
@@ -278,7 +283,7 @@
         <button class="img__sect-info__button">Find Your Shoe</button>
       </div>
     </section>
-    <!-- <section class="gearup__sect container">
+    <section class="gearup__sect container">
       <h2>Gear Up</h2>
       <div class="gearup__sect-swipers">
         <div class="gearup__sect-mens">
@@ -327,7 +332,7 @@
               </button>
             </div>
           </div>
-          <div class="swiperAny mySwiperToo">
+          <div class="swiperAny mySwiperToo-1">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="/image/nikeToo.jpg" alt="" />
@@ -418,7 +423,7 @@
               </button>
             </div>
           </div>
-          <div class="swiperAny mySwiper">
+          <div class="swiperAny mySwiperToo-2">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="/image/nikeToo.jpg" alt="" />
@@ -464,7 +469,96 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
+
+    <section class="catalog">
+      <div class="catalog__container">
+        <div class="catalog__content">
+          <div class="catalog__filters">
+            <div class="catalog__filter filter">
+              <div class="filter">
+                <div class="filter__title">Gender</div>
+                <div class="filter__input-body">
+                  <input type="checkbox" id="men" class="filter__input" />
+                  <label for="men" class="filter__label">Men</label>
+                </div>
+                <div class="filter__input-body">
+                  <input type="checkbox" id="women" class="filter__input" />
+                  <label for="women" class="filter__label">Women</label>
+                </div>
+                <div class="filter__input-body">
+                  <input type="checkbox" id="unisex" class="filter__input" />
+                  <label for="unisex" class="filter__label">Unisex</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__products">
+            <div data-gender="men" class="catalog__item item-product">
+              <img src="/image/nikeone.jpg" alt="" />
+              <div class="item-product__text">
+                <div class="item-product__text-main">
+                  <h3>Nike Air Max Pulse</h3>
+                  <p>₹ 13 995</p>
+                </div>
+                <p class="item-product__text-btn">Women's Shoes</p>
+              </div>
+            </div>
+            <div data-gender="women" class="catalog__item item-product">
+              <img src="/image/nikeone.jpg" alt="" />
+              <div class="item-product__text">
+                <div class="item-product__text-main">
+                  <h3>Nike Air Max Pulse</h3>
+                  <p>₹ 13 995</p>
+                </div>
+                <p class="item-product__text-btn">Women's Shoes</p>
+              </div>
+            </div>
+            <div data-gender="women" class="catalog__item item-product">
+              <img src="/image/nikeone.jpg" alt="" />
+              <div class="item-product__text">
+                <div class="item-product__text-main">
+                  <h3>Nike Air Max Pulse</h3>
+                  <p>₹ 13 995</p>
+                </div>
+                <p class="item-product__text-btn">Women's Shoes</p>
+              </div>
+            </div>
+            <div data-gender="men" class="catalog__item item-product">
+              <img src="/image/nikeone.jpg" alt="" />
+              <div class="item-product__text">
+                <div class="item-product__text-main">
+                  <h3>Nike Air Max Pulse</h3>
+                  <p>₹ 13 995</p>
+                </div>
+                <p class="item-product__text-btn">Women's Shoes</p>
+              </div>
+            </div>
+            <div data-gender="unisex" class="catalog__item item-product">
+              <img src="/image/nikeone.jpg" alt="" />
+              <div class="item-product__text">
+                <div class="item-product__text-main">
+                  <h3>Nike Air Max Pulse</h3>
+                  <p>₹ 13 995</p>
+                </div>
+                <p class="item-product__text-btn">Women's Shoes</p>
+              </div>
+            </div>
+            <div data-gender="men" class="catalog__item item-product">
+              <img src="/image/nikeone.jpg" alt="" />
+              <div class="item-product__text">
+                <div class="item-product__text-main">
+                  <h3>Nike Air Max Pulse</h3>
+                  <p>₹ 13 995</p>
+                </div>
+                <p class="item-product__text-btn">Women's Shoes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
   </body>

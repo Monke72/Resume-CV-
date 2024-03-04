@@ -1,0 +1,31 @@
+.filter {
+  &__title {
+  }
+  &__input-boby {
+  }
+  &__input {
+    display: none;
+    height: 0;
+    visibility: hidden;
+  }
+  &__label {
+    position: relative;
+  }
+  input + label::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #cccccc;
+  }
+  input:checked + label::before {
+    background-color: red;
+  }
+}
+
+.catalog {
+  &__products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

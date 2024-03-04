@@ -141,8 +141,10 @@ svg * {
     */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
   }
 }
@@ -269,6 +271,9 @@ body {
   padding: 11px 48px 11px 30px;
 }
 .header__main-input::-moz-placeholder {
+  padding-left: 5px;
+}
+.header__main-input:-ms-input-placeholder {
   padding-left: 5px;
 }
 .header__main-input::placeholder {
@@ -399,8 +404,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .swiper__text {
@@ -425,6 +430,25 @@ body {
   color: rgb(117, 117, 117);
 }
 
+.gearup__sect-buttons {
+  display: flex;
+}
+
+.gearup__sect-swipers {
+  display: flex;
+  gap: 60px;
+}
+
+.gearup__sect-swipers > div {
+  flex: 1 1 auto;
+  width: 45%;
+}
+
+.gearup__sect-swipers > div .swiperAny {
+  height: 400px;
+  overflow: hidden;
+  /* width: 100%; */
+} /*# sourceMappingURL=style.css.map */
 .img__sect {
   display: flex;
   flex-direction: column;
@@ -459,6 +483,26 @@ body {
   display: flex;
 }
 
-.swiperAny {
-  width: 50%;
+.filter__input {
+  display: none;
+  height: 0;
+  visibility: hidden;
+}
+.filter__label {
+  position: relative;
+}
+.filter input + label::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #cccccc;
+}
+.filter input:checked + label::before {
+  background-color: red;
+}
+
+.catalog__products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }/*# sourceMappingURL=style.css.map */
